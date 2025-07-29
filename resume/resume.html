@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwanth Gowda R - Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            font-size: 14px;
+        }
+
+        .resume-container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 12px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-item i {
+            color: #2563eb;
+            width: 16px;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1e40af;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .degree {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .date {
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        .institution {
+            color: #4b5563;
+            margin-bottom: 5px;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skill-category h4 {
+            color: #1e40af;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .skill-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-list li {
+            background: #e0f2fe;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #0369a1;
+        }
+
+        /* Experience/Projects */
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .company {
+            color: #4b5563;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            margin-left: 0;
+        }
+
+        .description li {
+            margin-bottom: 4px;
+        }
+
+        /* Certificates */
+        .certificate-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .certificate-name {
+            font-weight: bold;
+        }
+
+        .certificate-issuer {
+            color: #6b7280;
+            font-size: 12px;
+        }
+
+        .certificate-date {
+            color: #6b7280;
+            font-size: 12px;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .resume-container {
+                box-shadow: none;
+                padding: 20px;
+                max-width: none;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .education-header,
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="name">YASHWANTH GOWDA R</h1>
+            <p class="title">Computer Science Engineering Student | AI & ML Specialization</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>yashwanth1st2005@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>github.com/Yashwanth5341</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/yashwanth-gowda-r-477703292</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-twitter"></i>
+                    <span>@Yashwanth2005__</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>Passionate Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning with a growing expertise in full-stack development. Experienced with modern technologies including Python, JavaScript, and AI/ML frameworks. Committed to bridging the gap between AI and web development to create intelligent, interactive applications that solve real-world problems.</p>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="education-header">
+                    <h3 class="degree">Bachelor of Technology - Computer Science Engineering</h3>
+                    <span class="date">2023 - 2027 (Expected)</span>
+                </div>
+                <p class="institution">Specialization: Artificial Intelligence and Machine Learning</p>
+                <p>Relevant Coursework: Data Structures, Algorithms, Machine Learning, Deep Learning, Database Systems, Web Development</p>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>C Programming</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Web Development</h4>
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>AI & Machine Learning</h4>
+                    <ul class="skill-list">
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>TensorFlow</li>
+                        <li>Data Science</li>
+                        <li>Jupyter</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Databases & Tools</h4>
+                    <ul class="skill-list">
+                        <li>MongoDB</li>
+                        <li>SQL</li>
+                        <li>VS Code</li>
+                        <li>GitHub</li>
+                        <li>GitHub Copilot</li>
+                        <li>ChatGPT</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="job-title">Personal Portfolio Website</h3>
+                    <span class="date">2024 - Present</span>
+                </div>
+                <p class="company">Personal Project</p>
+                <ul class="description">
+                    <li>Developed a responsive personal portfolio website showcasing skills, education, and projects</li>
+                    <li>Implemented modern web technologies including HTML5, CSS3, and JavaScript</li>
+                    <li>Features interactive elements, smooth scrolling, and mobile-responsive design</li>
+                    <li>Integrated contact form validation and professional styling</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="job-title">AI Fitness Trainer (Planned)</h3>
+                    <span class="date">Future Project</span>
+                </div>
+                <p class="company">Academic Project Planning</p>
+                <ul class="description">
+                    <li>Planning AI-powered fitness trainer application with personalized workout plans</li>
+                    <li>Will incorporate computer vision for exercise form tracking</li>
+                    <li>Machine learning integration for adaptive training programs</li>
+                    <li>Technologies: Python, TensorFlow, OpenCV, Machine Learning</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="job-title">Task Management Application (Planned)</h3>
+                    <span class="date">Future Project</span>
+                </div>
+                <p class="company">Full-Stack Learning Project</p>
+                <ul class="description">
+                    <li>Planning collaborative task management tool for team productivity</li>
+                    <li>Real-time updates and drag-and-drop functionality</li>
+                    <li>Team collaboration features and user authentication</li>
+                    <li>Technologies: Vue.js, Socket.io, Express, PostgreSQL</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="section">
+            <h2 class="section-title">Certifications</h2>
+            
+            <div class="certificate-item">
+                <div>
+                    <div class="certificate-name">Introduction to Oracle: SQL</div>
+                    <div class="certificate-issuer">Infosys Springboard</div>
+                </div>
+                <div class="certificate-date">November 2024</div>
+            </div>
+
+            <div class="certificate-item">
+                <div>
+                    <div class="certificate-name">Introduction to Unix</div>
+                    <div class="certificate-issuer">Infosys Springboard</div>
+                </div>
+                <div class="certificate-date">October 2024</div>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="section">
+            <h2 class="section-title">Key Achievements</h2>
+            <ul class="description">
+                <li>Built 15+ projects exploring various technologies and programming concepts</li>
+                <li>2+ years of continuous learning in programming and web development</li>
+                <li>Proficient in 10+ technologies spanning frontend, backend, and AI/ML</li>
+                <li>Active contributor to open-source learning and collaborative projects</li>
+                <li>Strong foundation in both theoretical computer science and practical application</li>
+            </ul>
+        </section>
+
+        <!-- Additional Information -->
+        <section class="section">
+            <h2 class="section-title">Additional Information</h2>
+            <ul class="description">
+                <li><strong>Interests:</strong> Artificial Intelligence, Machine Learning, Web Development, Open Source</li>
+                <li><strong>Learning Focus:</strong> Bridging AI/ML with web development for intelligent applications</li>
+                <li><strong>Future Goals:</strong> Full-stack developer with AI/ML specialization</li>
+                <li><strong>Collaboration:</strong> Open to learning opportunities and project collaborations</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Print functionality
+        function printResume() {
+            window.print();
+        }
+
+        // Add print button functionality if needed
+        document.addEventListener('DOMContentLoaded', function() {
+            // Auto-adjust for better printing
+            if (window.matchMedia) {
+                const mediaQueryList = window.matchMedia('print');
+                mediaQueryList.addListener(function(mql) {
+                    if (mql.matches) {
+                        document.body.style.fontSize = '12px';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
